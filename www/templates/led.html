@@ -1,0 +1,8 @@
+<ion-view title="RGB LED">
+    <ion-content>
+        <div class="led" ng-click="toggle()">
+            <i class="icon ion-ios-lightbulb", ng-style="{ color: colors.rgb }" ng-class="getBulbClass()"></i>
+        </div>
+        <color-picker color="colors.color" rgb="colors.rgb" hex="colors.hex"></color-picker>
+    </ion-content>
+</ion-view>
